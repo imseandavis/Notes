@@ -9,11 +9,13 @@ Install MariaDB 10.0
 ```
 
 Create Database In MariaDB (Default password is blank) <br>
-**** Do not forget to replace ‘your-password’ with a strong password. ****
+**** Replace 'cachet' on the create database line with your desired db name ****
+**** Replace 'cachetuser' with your desired db admin username ****
+**** Replace 'password' with your desired password. ****
 ```
 [user]$ sudo mysql -u root -p
 MariaDB [(none)]> CREATE DATABASE cachet;
-MariaDB [(none)]> GRANT ALL PRIVILEGES ON cachet.* TO 'cachetuser'@'localhost' IDENTIFIED BY 'your-password-goes-here';
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON cachet.* TO 'cachetuser'@'localhost' IDENTIFIED BY 'password';
 MariaDB [(none)]> FLUSH PRIVILEGES;
 MariaDB [(none)]> \q
 
