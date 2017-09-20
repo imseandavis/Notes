@@ -1,7 +1,7 @@
 Update the system
-[code]
+```bash
 [user]$ sudo apt-get update && sudo apt-get -y upgrade
-[/code]
+```
 
 Install MariaDB 10.0
 To install MariaDB, run the following command:
