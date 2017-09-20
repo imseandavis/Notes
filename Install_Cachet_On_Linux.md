@@ -8,7 +8,7 @@ Install MariaDB 10.0
 [user]$ sudo apt-get install -y mariadb-server
 ```
 
-Create Database In MariaDB (Default password is blank)
+Create Database In MariaDB (Default password is blank) <br>
 **** Do not forget to replace ‘your-password’ with a strong password. ****
 ```
 [user]$ sudo mysql -u root -p
