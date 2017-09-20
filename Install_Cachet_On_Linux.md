@@ -1,22 +1,22 @@
 Update the system
 ```
-sudo apt-get update && sudo apt-get -y upgrade
+[user]$ sudo apt-get update && sudo apt-get -y upgrade
 ```
 
 Install MariaDB 10.0
-To install MariaDB, run the following command:
 ```
 [user]$ sudo apt-get install -y mariadb-server
 ```
 
-Next, we need to create a database for our Cachet installation.
+Create Database In MariaDB (Default password is blank)
+**** Do not forget to replace ‘your-password’ with a strong password. ****
 ```
 [user]$ sudo mysql -u root -p
 MariaDB [(none)]> CREATE DATABASE cachet;
-MariaDB [(none)]> GRANT ALL PRIVILEGES ON cachet.* TO 'cachetuser'@'localhost' IDENTIFIED BY 'your-password';
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON cachet.* TO 'cachetuser'@'localhost' IDENTIFIED BY 'your-password-goes-here';
 MariaDB [(none)]> FLUSH PRIVILEGES;
 MariaDB [(none)]> \q
-Do not forget to replace ‘your-password’ with a strong password.
+
 ```
 
 Install Apache2 web server
