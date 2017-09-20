@@ -123,6 +123,5 @@ Restart Apache:
 [user]$ sudo service apache2 restart
 ```
 
-Open your favorite web browser, navigate to http://your-domain.com/ and if you properly configured everything the Cachet installer should be starting. You should follow the easy instructions on the install screen inserting the necessary information as requested.
-<br>
-That is it. The Cachet installation is now complete.
+Navigate to http://your-domain.com/ <br>
+Profit $$$
