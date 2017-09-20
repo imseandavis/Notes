@@ -99,7 +99,7 @@ Open The new config file:
 
 Add the following lines to the config file:
 - Replace 'your-domain.com' with your actual DNS name
-- Replace the serverAlias with the same thing
+- Replace the serverAlias with the same thing you used for ServerName
 ```
 <VirtualHost *:80>
 ServerName your-domain.com
@@ -124,4 +124,5 @@ Restart Apache:
 ```
 
 Navigate to http://your-domain.com/ <br>
+Finish Configuration...<br>
 Profit $$$
