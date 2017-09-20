@@ -3,6 +3,12 @@ Update the system
 [user]$ sudo apt-get update && sudo apt-get -y upgrade
 ```
 
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+
 Install MariaDB 10.0
 To install MariaDB, run the following command:
 [user]$ sudo apt-get install -y mariadb-server
