@@ -18,23 +18,37 @@ MariaDB [(none)]> CREATE DATABASE cachet;
 MariaDB [(none)]> GRANT ALL PRIVILEGES ON cachet.* TO 'cachetuser'@'localhost' IDENTIFIED BY 'password';
 MariaDB [(none)]> FLUSH PRIVILEGES;
 MariaDB [(none)]> \q
-
 ```
 
 Install Apache2 web server
+```
 [user]$ sudo apt-get install apache2
+```
+
 Install PHP and required PHP modules
-To install the latest stable version of PHP version 7 and all necessary modules, run:
+```
 [user]$ sudo apt-get install php7.0 libapache2-mod-php7.0 php7.0-mbstring php7.0-curl php7.0-zip php7.0-gd php7.0-mysql php7.0-mcrypt php7.0-xml curl
+```
+
 Enable the Apache2 rewrite module if it is not already done:
+```
 [user]$ sudo a2enmod rewrite
-In order to activate the new configuration, restart the Apache web server using the following command:
+```
+
+In order to activate the new configuration, restart Apache:
+```
 [user]$ sudo service apache2 restart
+```
+
 Download the source code with Git
+- Replace 2.3.12 with latest version number found here: https://github.com/CachetHQ/Cachet/releases
+```
 [user]$ sudo cd /var/www/html/
 [user]$ sudo git clone https://github.com/cachethq/Cachet.git
 [user]$ sudo cd Cachet
-[user]$ sudo git checkout v2.3.9
+[user]$ sudo git checkout v2.3.12
+```
+
 All files have to be readable by the web server, so we need to set a proper ownership
 [user]$ sudo chown www-data:www-data -R /var/www/html/Cachet/
 Configuring a database
